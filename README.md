@@ -24,10 +24,15 @@ Steps to follow:
 
 Debugging and errors:
 1. define scopes properly, given below is a list of scopes to be used as per your requirement:
+
   https://www.googleapis.com/auth/spreadsheets.readonly:	Allows read-only access to the user's sheets and their properties.
+  
   https://www.googleapis.com/auth/spreadsheets:	Allows read/write access to the user's sheets and their properties.
+  
   https://www.googleapis.com/auth/drive.readonly :	Allows read-only access to the user's file metadata and file content.
+  
   https://www.googleapis.com/auth/drive.file :	Per-file access to files created or opened by the app.
+  
   https://www.googleapis.com/auth/drive :	Full, permissive scope to access all of a user's files.
   
 2. While converting the 2d array values into a dataframe list index out of bounds error may occur. This happens due to empty cells in your data range, make sure you replace them with "NA" or "Null".
