@@ -37,7 +37,7 @@ Debugging and errors:
   
 2. While converting the 2d array values into a dataframe list index out of bounds error may occur. This happens due to empty cells in your data range, make sure you replace them with "NA" or "Null".
 
-3. While writing/modifying values in the google spreadsheet make sure the numeric columns are type casted as floats. int32 or int 64 types are not json subscriptable.
+3. While writing/modifying values in the google spreadsheet make sure the numeric columns are type casted as strings or floats. int32 or int 64 types are not json subscriptable.
 
 P.S Do check out https://developers.google.com/sheets/api/quickstart/python 
 
